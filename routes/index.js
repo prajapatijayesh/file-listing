@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-const ci = require('../controllers/index');
+const CTRL_INDEX = require('../controllers/index');
 
 /* GET home page. */
-router.get('/', ci.fetch);
+router.get('/', CTRL_INDEX.fetch);
 
 module.exports = router;
